@@ -41,7 +41,7 @@ RUN apt-get -y update && \
 # Set work directory
 COPY ./app /app
 WORKDIR /app
-EXPOSE 8000
+EXPOSE $PORT
 
 # ENV PATH="/py/bin:$PATH"
 USER django-user
